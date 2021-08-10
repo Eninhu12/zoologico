@@ -15,10 +15,6 @@ public class AnimaisModel {
 		return id;
 	}
 
-	public Long getGerador() {
-		return gerador;
-	}
-
 	public String getEspecie() {
 		return especie;
 	}

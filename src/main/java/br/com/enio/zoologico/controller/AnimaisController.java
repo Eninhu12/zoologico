@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.enio.zoologico.armazenamento.SalvaDados;
 import br.com.enio.zoologico.model.AnimaisModel;
 import br.com.enio.zoologico.model.AvesModel;
-import br.com.enio.zoologico.model.EnumTipoIngressoModel;
 import br.com.enio.zoologico.model.MamiferosModel;
 import br.com.enio.zoologico.model.RepteisModel;
 @RestController
@@ -21,7 +20,6 @@ public class AnimaisController {
 	@GetMapping("/cadastrar-mamiferos")
 	public AnimaisModel CadastrarMamiferos(
 			@RequestParam String especie,
-			@RequestParam EnumTipoIngressoModel tipo,
 			@RequestParam BigDecimal peso,
 			@RequestParam BigDecimal tamanho,
 			@RequestParam int qtd,
@@ -35,7 +33,6 @@ public class AnimaisController {
 	@GetMapping("/cadastrar-aves")
 	public AnimaisModel CadastrarAves(
 			@RequestParam String especie,
-			@RequestParam EnumTipoIngressoModel tipo,
 			@RequestParam BigDecimal peso,
 			@RequestParam BigDecimal tamanho,
 			@RequestParam int qtd,
@@ -49,7 +46,6 @@ public class AnimaisController {
 	@GetMapping("/cadastrar-repteis")
 	public AnimaisModel CadastrarRepteis(
 			@RequestParam String especie,
-			@RequestParam EnumTipoIngressoModel tipo,
 			@RequestParam BigDecimal peso,
 			@RequestParam BigDecimal tamanho,
 			@RequestParam int qtd,
