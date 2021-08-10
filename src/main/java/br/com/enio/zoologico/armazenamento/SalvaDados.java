@@ -11,4 +11,7 @@ public class SalvaDados {
 	}
 	public static List<PessoaModel>pessoas = new ArrayList<>();
 	public static List<AnimaisModel>animais = new ArrayList<>();
+	public static List<AnimaisModel>mamiferos = new ArrayList<>();
+	public static List<AnimaisModel>repteis = new ArrayList<>();
+	public static List<AnimaisModel>aves = new ArrayList<>();
 }
