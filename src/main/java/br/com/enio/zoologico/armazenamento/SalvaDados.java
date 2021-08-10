@@ -1,5 +1,14 @@
 package br.com.enio.zoologico.armazenamento;
 
-public class SalvaDados {
+import java.util.ArrayList;
+import java.util.List;
 
+import br.com.enio.zoologico.model.AnimaisModel;
+import br.com.enio.zoologico.model.PessoaModel;
+
+public class SalvaDados {
+	public SalvaDados() {
+	}
+	public static List<PessoaModel>pessoas = new ArrayList<>();
+	public static List<AnimaisModel>animais = new ArrayList<>();
 }
