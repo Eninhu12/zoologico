@@ -88,5 +88,22 @@ public class AnimaisController {
 		}
 		return null;
 	}
-
+	@GetMapping("/alterar")
+	public AnimaisModel AlterarProduto(
+			@RequestParam Long id,
+			@RequestParam String especie,
+			@RequestParam BigDecimal peso,
+			@RequestParam BigDecimal tamanho,
+			@RequestParam char sexo,
+			@RequestParam int qtd
+			) 
+	{
+		for (AnimaisModel animal : SalvaDados.animais) {
+			if (id.equals(animal.getId())) {
+				animal.Alterar(especie, peso,tamanho,sexo,qtd);
+				return animal;
+			}
+		}
+    	return null;
+    }
 }

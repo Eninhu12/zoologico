@@ -44,4 +44,13 @@ public class AnimaisModel {
 		this.qtd=qtd;
 	}
 
+	public void Alterar(String especie, BigDecimal peso, BigDecimal tamanho, char sexo, int qtd) {
+		this.especie=especie;
+		this.peso=peso;
+		this.tamanho=tamanho;
+		this.sexo=sexo;
+		this.qtd=qtd;
+		
+	}
+
 }
