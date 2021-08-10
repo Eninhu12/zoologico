@@ -8,7 +8,17 @@ public class AnimaisModel {
 	private BigDecimal tamanho;
 	private char sexo;
 	private int qtd;
+	private Long id;
+	private static Long gerador = Long.valueOf(0);
 	
+	public Long getId() {
+		return id;
+	}
+
+	public Long getGerador() {
+		return gerador;
+	}
+
 	public String getEspecie() {
 		return especie;
 	}
@@ -29,7 +39,8 @@ public class AnimaisModel {
 		return qtd;
 	}
 
-	public AnimaisModel() {
+	public AnimaisModel(String especie,BigDecimal peso,BigDecimal tamanho,char sexo,int qtd) {
+		this.id=++gerador;
 		this.especie=especie;
 		this.peso=peso;
 		this.tamanho=tamanho;
